@@ -50,3 +50,133 @@ table {
 
 
 /* Write your css below here */
+
+.container{
+    background-color: black;
+    height: 100vh;
+} 
+
+a {
+    text-decoration: none;
+}
+
+header{
+    background-color: #426078;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+header a {
+    color: #f6f6fa;
+    margin-top: 5px;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}    
+
+section{
+    background-color: #fff;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    background-color: #C5D4E8;
+    width: 100%;
+    padding: 1rem;
+    text-align: justify;
+} 
+
+aside{
+    background-color: #C5D4E8;
+    width: 100%;
+    padding: 1rem;
+} 
+
+footer{
+    background-color: #BAC44A;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Responsive Layout */
+
+@media (width <= 768px) {
+   p {
+    font-size: 15px;
+    margin: auto;
+    line-height: 30px;
+   }
+   
+   h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+   }
+
+   header a {
+    font-size: 20px;
+   }
+}
+
+@media (width >= 768px) {
+    p {
+        font-size: 15px;
+        margin: auto;
+        line-height: 40px;
+    }
+    
+    h1{
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+}
+
+@media (width >= 992px) {
+    p {
+        font-size: 20px;
+        margin: auto;
+        line-height: 40px;
+    }
+    
+    section{
+        flex-direction: row;
+    }
+
+    main{
+        background-color: #C5D4E8;
+        width: 70%;
+        padding: 1rem;
+        float: left;
+
+    } 
+    
+    aside{
+        background-color: #C5D4E8;
+        width: 30%;
+        padding: 1rem;
+        float: right;
+    } 
+}
