@@ -51,6 +51,10 @@ table {
 
 /* Write your css below here */
 
+*{
+	box-sizing: border-box;
+}
+
 .container{
     background-color: black;
     height: 100vh;
@@ -142,8 +146,7 @@ footer{
 
 	p {
     font-size: 15px;
-    margin-left: 0;
-	margin-right: 10px;
+	margin: auto;
     line-height: 30px;
    	}
    
@@ -156,14 +159,6 @@ footer{
 	section{
 		flex-direction: column;
 		text-align: justify;
-	}
-
-	main{
-		width: 92vw;
-	}
-
-	aside{
-		width: 92vw;
 	}
 }
 
@@ -180,11 +175,11 @@ footer{
     }
 
 	main{
-		width: 80%;
+		width: 70%;
 	}
 
 	aside{
-		width: 20%;
+		width: 30%;
 	}
 }
 
